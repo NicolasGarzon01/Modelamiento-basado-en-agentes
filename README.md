@@ -41,7 +41,7 @@ Sigue estos pasos para ejecutar la simulación en tu máquina local.
 ```bash
 git clone [URL-DE-TU-REPOSITORIO]
 cd [NOMBRE-DE-TU-CARPETA]
-
+```
 **2. Crea y activa un entorno virtual:**
 ```Bash
 # Crear el entorno
@@ -52,10 +52,23 @@ python -m venv venv
 
 # Activar en macOS/Linux
 source venv/bin/activate
+```
 
 **3. Instala las dependencias:**
+```bash
 pip install mesa pandas
-(Error inicial: AttributeError: module 'mesa' has no attribute 'time' - solución: crear el archivo time.py en la ruta: venv\Lib\site-packages\mesa)
+```
+
+**posible error**
+```pgsql
+ModuleNotFoundError: No module named 'mesa.time'
+```
+
+solución: crear archivo time.py (adjunto en los archivos)
+```swift
+venv/Lib/site-packages/mesa/
+```
+
 **4. Ejecuta una simulación:**
 ```Bash
 # Para ejecutar el modelo base
