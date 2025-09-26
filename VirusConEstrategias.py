@@ -114,7 +114,7 @@ class InfectionModel(mesa.Model):
             self.running = False
 
 
-# --- Bloque para ejecutar la simulación ---
+
 if __name__ == "__main__":
     SIMULATION_STEPS = 150 # Aumentamos los pasos para ver mejor los efectos
 
@@ -139,4 +139,5 @@ if __name__ == "__main__":
     pd.set_option('display.max_rows', None)
     
     print("--- Resultados de la Simulación del Virus con Estrategias ---")
+
     print(results)
