@@ -118,7 +118,7 @@ class InfectionModel(mesa.Model):
 if __name__ == "__main__":
     SIMULATION_STEPS = 150 # Aumentamos los pasos para ver mejor los efectos
 
-    # --- AHORA PUEDES EXPERIMENTAR AQUÍ ---
+    
     model = InfectionModel(
         N=200, 
         initial_infected=10, 
@@ -141,3 +141,4 @@ if __name__ == "__main__":
     print("--- Resultados de la Simulación del Virus con Estrategias ---")
 
     print(results)
+
